@@ -1,0 +1,404 @@
+    <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Smile Music</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Bootstrap-->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- CSS -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- font-awesome -->
+	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<!-- jQuery -->
+	<link rel="stylesheet" href="css/icon-font.css" type='text/css' />
+	<script src="js/jquery-2.1.4.js"></script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      /*-webkit-filter: grayscale(90%);*/
+     /* filter: grayscale(90%);*/ /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }  
+  </style>
+    </head>
+    <body>
+       
+	<!-- menu -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+                <a class="navbar-brand" href="#">SMILE MUSIC</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+	      
+<!--drop down <li class="dropdown">
+	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+	        <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="#">Page 1-1</a></li>
+	          <li><a href="#">Page 1-2</a></li>
+	          <li><a href="#">Page 1-3</a></li>
+	        </ul>
+	      </li>-->
+              
+	      <li><a href="artists.html"><i class="fa fa-user" aria-hidden="true"></i> Artists</a></li>
+	      <li><a href="albums.html"><i class="fa fa-music" aria-hidden="true"></i> Albums</a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+	    </ul>
+	    <!-- search -->
+	    <div class="input-group" style="margin-top:10px;width:500px;">
+		    <input type="text" class="form-control" placeholder="Search" >
+		    <div class="input-group-btn">
+		      <button class="btn btn-default" type="submit">
+		        <i class="glyphicon glyphicon-search"></i>
+		      </button>
+		    </div>
+		</div>
+	</nav>
+	<!-- end menu -->
+
+	<!-- banner -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/11.jpg" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/22.jpg" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago - A night we won't forget.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="images/33.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>LA</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+	</div>
+	<!-- end banner -->
+
+	<!-- content -->
+	<br>
+
+<div class="music-left" style="padding-left: 20px;">
+	<div class="albums">
+		<div class="tittle-head">
+				<h3 class="tittle">New Releases <span class="new">View</span></h3>
+				<a href="index.html"><h4 class="tittle two">See all</h4></a>
+				<div class="clearfix"> </div>
+                </div>
+				<div class="col-md-3 content-grid">
+					<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+					<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+					</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+					</div>
+				<div class="col-md-3 content-grid last-grid">
+						<a href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+					<a href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+					<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid last-grid">
+						<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+								
+	<!--//discover-view-->
+						
+	<div class="albums second">
+			<div class="tittle-head">
+				<h3 class="tittle">Hot Videos <span class="new">View</span></h3>
+				<a href="index.html"><h4 class="tittle two">See all</h4></a>
+				<div class="clearfix"> </div>
+			</div>
+				<div class="col-md-3 content-grid">
+					<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+					<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+					</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+					</div>
+				<div class="col-md-3 content-grid last-grid">
+						<a href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+					<a href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+					<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid">
+						<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="col-md-3 content-grid last-grid">
+						<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+						<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+		<!--//discover-view-->
+	</div>
+<div>	
+
+	<!--//music-left-->
+
+	<!--/music-right-->
+	<div class="music-right">
+		<div class="albums">
+			<div class="list-group">
+			  <div class="list-group-item" style="background-color: #e2689f">Top 10
+				<a href="#"><i class="fa fa-play-circle" aria-hidden="true" style="margin-left: 10px;"></i></a>
+			  </div>	
+			  <a href="single.html" class="list-group-item"><span>1</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>2</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>3</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>4</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>5</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>6</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>7</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>8</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>9</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+			  <a href="single.html" class="list-group-item"><span>10</span><span style="margin-left: 10px;">song</span><br><span style=" margin-left: 20px;">name</span></a>
+		</div>	
+
+			<!--/app_store-->
+			  <div class="apps">
+						<h3 class="hd-tittle">Mosaic now available in</h3>
+						<div class="banner-button">
+							<a href="#"><img src="images/1.png" alt=""></a>
+						</div>
+						<div class="banner-button green-button">
+							<a href="#"><img src="images/2.png" alt=""></a>
+						</div>
+							<div class="clearfix"></div>
+				</div>
+		  	<!--//app_store-->
+	</div>
+</div>
+	
+	<div class="col-md-12">
+		<div class="review-slider">
+			<div class="tittle-head">
+				<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
+				<div class="clearfix"> </div>
+			</div>	
+
+			<ul id="flexiselDemo1">
+				<li>
+					<a href="singlevideo.html"><img src="images/v1.jpg" alt=""/></a>
+					<div class="slide-title"><h4>Adele21 </div>
+					<div class="date-city">
+						<h5>Jan-02-16</h5>
+						<div class="buy-tickets">
+							<a href="single.html">READ MORE</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="singlevideo.html"><img src="images/v2.jpg" alt=""/></a>
+					<div class="slide-title"><h4>Adele21</h4></div>
+					<div class="date-city">
+						<h5>Jan-02-16</h5>
+						<div class="buy-tickets">
+							<a href="single.html">READ MORE</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="singlevideo.html"><img src="images/v3.jpg" alt=""/></a>
+					<div class="slide-title"><h4>Shomlock</h4></div>
+					<div class="date-city">
+						<h5>Jan-02-16</h5>
+						<div class="buy-tickets">
+							<a href="single.html">READ MORE</a>
+						</div>
+					</div>
+				</li>
+			</ul>	
+
+			<script type="text/javascript">
+			$(window).load(function() {
+                            $("#flexiselDemo1").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: false,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+				portrait: { 
+                                changePoint:480,
+				visibleItems: 2
+                            }, 
+                            landscape: { 
+				changePoint:640,
+				visibleItems: 3
+				},
+                            tablet: { 
+				changePoint:800,
+				visibleItems: 4
+				}
+                                }
+                            });
+			});
+		</script>
+                <script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+    </div>
+</div>
+	<div class="clearfix"></div>
+
+</div>	
+	
+	
+            <!--body wrapper end-->
+			<div class="footer">
+				<div class="footer-grid">
+					<h3>Navigation</h3>
+					<ul class="list1">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="radio.html">Artists</a></li>
+					  <li><a href="browse.html">Albums</a></li>
+					  <li><a href="contact.html">Contact</a></li>
+				    </ul>
+				</div>
+<!--				<div class="footer-grid">
+					<h3>Our Account</h3>
+				    <ul class="list1">
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+					  <li><a href="#">Personal information</a></li>
+					  <li><a href="#">Addresses</a></li>
+					  <li><a href="#">Discount</a></li>
+					  <li><a href="#">Orders history</a></li>
+					  <li><a href="#">Addresses</a></li>
+					  <li><a href="#">Search Terms</a></li>
+				    </ul>
+				</div>-->
+				<div class="footer-grid">
+					<h3>Our Support</h3>
+					<ul class="list1">
+					  <li><a href="contact.html">Site Map</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+				</div>
+                                <div class="footer-grid">
+                                    <h3>Newsletter</h3>
+                                    <p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                                    <div class="search_footer">
+                                     <form>
+                                       <input type="text" placeholder="Search...." required="">
+                                      <input type="submit" value="Submit">
+                                      </form>
+                                    </div>
+                                </div>
+                                <div class="footer-grid footer-grid_last">
+                                    <h3>About Us</h3>
+                                    <p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
+                                    <p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-250-2131</p>
+                                    <p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">info(at)mailing.com</a></span></p>	
+                                </div>
+                                <div class="clearfix"> </div>
+                        </div>
+			
+        <!--footer section start-->
+        <footer> 
+             <p>2017 Power By NGUYEN NGOC BAO THY</p>
+	</footer>
+        <!--footer section end-->
+
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+    </body>
+</html>
